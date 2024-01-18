@@ -1,15 +1,20 @@
 <template>
     <div>
-        Работает!ebwtbwetb
+        <div> Кол-во лайков {{ likes }}</div>
     </div>
 </template>
-
 <script>
-
+export default {
+  data () {
+    return {
+      /* eslint-disable */  
+      likes: 0
+    }
+  }
+}
 </script>
 
 <style>
 
 </style>
-
-//Single file component
+/* eslint-disable */  
