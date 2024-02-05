@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
 import App from './App'
 
-createApp(App).mount('#app') // эта строчка описывает куда наше приложение по итогу монтировать, чтоб его мог видеть пользователь. Для этого в индекс.html мы создали див с id app, где будет наще прилоджение
+const app = createApp(App).mount('#app')
