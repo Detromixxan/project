@@ -85,8 +85,10 @@ export default {
   },
   computed: {
     data(){
-      if(this.search){
+      if((Number(this.search))){
         return this.posts.filter(e => e.id === Number(this.search))
+      } else if((String(this.search))){
+        return this.posts.filter(e => e.title === String(this.search))
       }
       return this.posts
     },
